@@ -1,0 +1,24 @@
+create projectile - done
+fire projectile in desired direction(cube direction) - done
+
+create damage system for enemies
+create projectile collision for enemies
+projectile destruction
+enemy death
+scoring system
+
+player health
+
+Sept 4 2026
+I stopped where I was trying to create an object for each projectile created that would have the directional values, velocity values, etc the status of which would then affect the behaviour of the projectile and so on.
+
+Theoretically, I can have the values of this object be modified when events occur and then have the projectile Mesh respond based on the value for the different attributes of this object. This helps me to avoid creating a class
+
+Sept 5 2026
+I am about to resume on this. Will update later 1:51pm
+
+5:59pm
+I finished creating the objects lol. there were several mistakes, I named certain attributes wrongly and that led to my collision logic not working as it should. there was also some issues with my yCollision, another reason why it wasnt working, pasted the code into chatGPT and it identified these errors after several go overs. COllision works fine now, however, removing enemy meshes from the scene doesnt end the collision logic as it is based on values and those values keep updating even after the object has been removed from the scene. this causes the player cube to collide with the enemy cube even though the enemy cube no longer exists. with a regular for loop i would just remove the enemy from the array using its index but im using for each. anyways I added health for the enemies which reduces health steadily till it reaches zero. no scoring system or anything like that yet, this could potentially be a good place to stop coding but then I would go on to do what? exactly so yeah idk, maybe I add a nighttime skybox, a texture for the ground and some planets in the sky. - 6:20pm
+
+September 30 2026
+Havent worked on this bad boy in a while, jumping in today to do some heavy work. I feel mad sleepy but I have added a text setup in the center of the screen for game over, power ups and such bullshit
